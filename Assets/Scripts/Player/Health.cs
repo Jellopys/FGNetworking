@@ -38,14 +38,14 @@ public class Health : NetworkBehaviour
 
     private void TriggerDeath()
     {
-        Debug.Log("Trigger Death");
+        // Die and respawn
         transform.position = new Vector3(Random.Range(-4, 4), Random.Range(-3, 3));
         currentHealth.Value = 10;
         
         currentLives--;
         if (currentLives <= 0)
         {
-            Debug.Log("Die permanently");
+            // Die permanently
 
             NetworkObject networkObject = gameObject.GetComponent<NetworkObject>();
             networkObject.Despawn();

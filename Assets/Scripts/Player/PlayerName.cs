@@ -38,6 +38,5 @@ public class PlayerName : NetworkBehaviour
     private void SetClientNameClientRpc(string clientName)
     {
         playerText.text = clientName;
-        Debug.Log(clientName);
     }
 }

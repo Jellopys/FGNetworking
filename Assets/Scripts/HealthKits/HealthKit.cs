@@ -17,9 +17,6 @@ public class HealthKit : NetworkBehaviour
             int yPosition = Random.Range(-2, 2);
 
             transform.position = new Vector3(xPosition, yPosition);
-
-            //NetworkObject networkObject = gameObject.GetComponent<NetworkObject>();
-            //networkObject.Despawn();
         }
     }
 }
